@@ -2,7 +2,7 @@ require('dotenv').config()
 const puppeteer = require('puppeteer');
 
 const crawlPage = async () => {
-    const browser = await puppeteer.launch({ headless: 'true' })
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
     const page = await browser.newPage();
 
     await page.goto('https://mrei.icloudems.com/corecampus/index.php');
