@@ -17,3 +17,4 @@ const main = async() => {
 
     sendNotif();
 }
+main();
